@@ -1,0 +1,473 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    background: #B31515;
+}
+
+.nav-link:hover {
+    transform: translateY(-5px);
+    color: #B31515;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+    background-color: white; 
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-image: url('../image/section4-bg.jpg');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footercover {
+    background: black;
+    opacity: 80%;
+    height: 100%;
+}
+
+.footerform {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 5px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.footerform input {
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.footerform i {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.font {
+    font-size: 50px;
+}
+
+.slidebox {
+    padding: 200px 30px;
+}
+
+.homecover{
+    background: black;
+    opacity: 80%;
+    height: 100%;
+}
+
+.slidehead {
+    color: #E50707;
+    animation: flydown 1s linear 1;
+    position: relative; 
+}
+
+@keyframes flydown {
+    0% {
+        top: -500px; 
+        left: 0;
+    }
+    100% {
+        top: 0px; 
+        left: 0;
+    }
+}
+
+.sildesub {
+    animation: flyright 1s ease 1;
+    position: relative; 
+}
+
+@keyframes flyright {
+    0% {
+        right: -1000px;
+    }
+    100% {
+        right: 1px;
+    }
+}
+
+.slidedis p {
+    font-size: 18px;
+}
+
+.slidedis {
+    animation: zoomin 1s ease 1;
+    position: relative; 
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.coubtn {
+    width: 165px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: 2px solid red;
+    transform: skewX(-20deg);
+}
+
+.coubtn:hover {
+    background: red;
+    color: white;
+}
+
+.btn-a{
+    text-decoration: none;
+    color: white;
+}
+.slidebtn1 {
+    animation: flyleft 1s ease 1;
+    position: relative; 
+}
+
+@keyframes flyleft {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 1px;
+    }
+}
+
+.slidebtn2 {
+    animation: flyright1 1s ease 1;
+    position: relative; 
+}
+
+@keyframes flyright1 {
+    0% {
+        right: -1000px;
+    }
+    100% {
+        right: 1px;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+    background-size: 100% 100%; 
+}
+
+.mySwiper:hover .swiper-button-next, 
+.mySwiper:hover .swiper-button-prev {
+    display: block;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid red;
+    transform: skewX(-17deg);
+    line-height: 30px;
+    text-align: center;
+}
+
+.services {
+    background-image: url('../image/happy-employees.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.servicescover{
+    background: black;
+    opacity: 80%;
+    height: 100%;
+}
+
+.service-box {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px dotted white; 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+.service-box:hover{
+    border: 5px dotted red;
+    transition-duration: 0.9s;
+}
+
+.service-box:hover h5,
+.service-box:hover i {
+  color: red;
+  transition-duration: 0.6s;
+}
+
+.coubtn2 {
+    width: 165px;
+    height: 50px;
+    background: transparent;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid red;
+    transform: skewX(-20deg);
+}
+
+
+.coubtn2:hover {
+    background: red;
+    color: white;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+    transition-duration: 0.9s;
+}
+
+.card:hover .card-body{
+    background: red;
+    color: white;
+}
+
+.chefsimg{
+    background: url('./image/happy-employees.png');
+}
+
+.chefscover{
+    background: rgba(0, 0, 0, 0.74);
+    height: 100%;
+}
+
+.cookslide{
+    width: 270px;
+    height: 410px;
+    overflow: hidden;
+    opacity:100%;
+    background: white;
+}
+
+.cookslide img{
+    width: 100%;
+    height: 271px;
+    object-fit: cover;
+}
+
+.cookbox{
+    height: 100%;
+}
+
+.cookslide:hover .cookbox{
+    background: red;
+    color: white;
+    transition-duration: 0.9s;
+}
+
+.clients-box{
+    border: 2px dotted black;
+    width: 263px;
+    height: 329px;
+    
+}
+
+.red-circle{
+    width: 150px;
+    height: 150px;
+    border: 13px solid red;
+    border-radius: 50%;
+    position: relative;
+}
+
+.black-clicle{
+    background: black;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clientshover:hover{
+    color: red;
+}
+
+.clientshover{
+    text-decoration: none;
+    color: black;
+}
+
+.coubtn3 {
+    width: 165px;
+    height: 50px;
+    background: transparent;
+    background: red;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid red;
+    transform: skewX(-20deg);
+}
+
+.form-control{
+    background: transparent;
+    border: 2px solid gray;
+    color: white;
+    outline: none;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+.form-control::placeholder {
+    color: gray;
+}
+
+.resmsg{
+    width: 100%;
+    height: 150px;
+}
+
+.feecircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.feecircle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.line{
+    width: 50px;
+    height: 2px;
+    background: red;
+}
+
+.blogcard{
+    width: 360px;
+    height: 580px;
+    background: white;
+    overflow: hidden;
+}
+
+.blogimg{
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+}
+
+.blogdit{
+    width: 100%;
+    height: 281px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: black;
+}
+
+.blogdit span:hover{
+    color: red;
+}
+
+.blogsocial{
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+
+.blogsocial i{
+    color: gray;
+}
+
+.coubtn3 {
+    width: 165px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid white;
+    transform: skewX(-20deg);
+}
+
+.coubtn3:hover {
+    background: white;
+    color: red;
+}
+
+.contactbg {
+    background: linear-gradient(to bottom, white 50%, gray 50%);
+    height: 1000px;
+}
+
+.contactform{
+    width: 100%;
+    height: auto;
+    background: #B31515;
+    padding: 20px;
+}
+
+.contacttext{
+    height: 87%;
+    resize: none;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contactform input::placeholder,
+.contactform textarea::placeholder {
+  color: #888;
+}
+
+.upbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: red;
+    border: 2px solid red;
+    color: white;
+    transform: skewX(-26deg);
+    z-index: 1000;
+}
+
